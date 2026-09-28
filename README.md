@@ -4,8 +4,10 @@
 > **v2.1 飞特 HD-1910 版**（2026-09-25，轮辋 + 轮胎合并）和 **v1.1 原版 XL330 版**（2026-09-15，踝 / 小腿 / 脚同步改了）。
 > 配套主仓：[**fanhao375/microduck-replica**](https://github.com/fanhao375/microduck-replica) —— 整机复刻、电路板与逆向分析都在那边。
 
+> **模型与打印文件统一在本仓库维护（2026-09-28）。** 主仓已移除旧上游 STL 下载副本。请先选择飞特或 XL330 版本，再核对具体附件；两款舵机的配合件不能混用。
+
 > 📦 **压缩包在 [Releases 页](../../releases)（页面右边栏），不在上面的文件列表里。** 374 MB 的 SolidWorks 不适合塞进 git。
-> 🖨️ **只想打印、不想看图** → [拓竹 MakerWorld · microduck 飞特版](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428)，一键切片（机械行者Robo 上传，就是这套飞特版）。
+> 🖨️ 飞特打印工程见下方[打印说明](#打印)。仓库内 3MF 是 **2026-09-15 版，尚未包含 v2.1 的 TPU 合体轮胎**；该轮胎变更属于轮滑变体。[MakerWorld 工程](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428)由机械行者Robo 上传，本轮未核验其在线版本。
 
 <div align="center">
   <img src="assets/飞特版装机-正面.jpg" alt="飞特 HD-1910 版装机实物" width="360">
@@ -26,7 +28,7 @@
 | **舵机** | Dynamixel XL330-M288 | 飞特 HD-1910-C001 |
 | **文件** | 57 个 SolidWorks，无后缀 | 60 个 SolidWorks + 10 个 STEP，`-FT` 后缀 |
 | **差别** | — | **舵盘凸出**，8 个配合件改了（[改了什么](#飞特-hd-1910-版改了什么)） |
-| **打印** | 主仓 [`print/`](https://github.com/fanhao375/microduck-replica/tree/master/print) 上游 STL | [`打印/` 3mf](打印/) · [拓竹一键打印](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428) |
+| **打印** | 从 [v1.1 SolidWorks 源文件](https://github.com/fanhao375/microduck-replica-cad/releases/tag/v1.1) 按零件导出 STL 后切片；本仓暂无该版整套打印工程 | [`打印/` 3MF](打印/) 为 09-15 版，未含 v2.1 合体轮胎；见[版本提示](#打印) |
 | **实物** | — | 已装出（上图） |
 | **下载** | [`SolidWorks-XL330-v1.1.zip`](https://github.com/fanhao375/microduck-replica-cad/releases/download/v1.1/SolidWorks-XL330-v1.1.zip) 333 MB | [`SolidWorks-FT2026-09-25.zip`](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.1/SolidWorks-FT2026-09-25.zip) 343 MB |
 
@@ -69,8 +71,8 @@
 | **装配 BOM**（机械行者Robo 整理，35 个打印件 + 16 个外购件，含材料、数量，**2026-09-16 起带轴承和螺丝的采购链接**） | [`BOM/装配BOM-机械行者Robo-2026-09-16-带采购链接.xlsx`](BOM/装配BOM-机械行者Robo-2026-09-16-带采购链接.xlsx)，下面有校对过的表 |
 | **装配安装说明书**（21 页 PDF） | [`安装说明书/microduck装配安装说明书.pdf`](安装说明书/microduck装配安装说明书.pdf) |
 | **组件图 / 爆炸图**（23 张） | [`组件图/`](组件图/) |
-| 🖨️ **打印工程文件**（Bambu Studio `.3mf`，4.9 MB，2026-09-15 版） | [`打印/microduck-飞特版-BambuStudio.3mf`](打印/microduck-飞特版-BambuStudio.3mf) —— **就在仓库里，直接下**。5 个盘、52 个件、P2S / PLA / 0.2 层高，跟拓竹上那个是同一份 |
-| 🖨️ **拓竹一键打印** | [MakerWorld · microduck 飞特版](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428) —— 有拓竹打印机的直接云切片 |
+| 🖨️ **打印工程文件**（Bambu Studio `.3mf`，4.9 MB，2026-09-15 版） | [`打印/microduck-飞特版-BambuStudio.3mf`](打印/microduck-飞特版-BambuStudio.3mf) —— 5 个盘、52 个对象；**未含 v2.1 合体轮胎**，材料与切片参数见[打印说明](#打印) |
+| 🖨️ **MakerWorld 打印入口** | [MakerWorld · microduck 飞特版](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428) —— 使用前核对作者标注的版本与材料，本轮未核验在线更新 |
 
 > **为什么源文件放 Releases 不放 git**：SolidWorks 是二进制格式，git 存它既不能 diff 也不能合并，
 > 只会一版版往历史里堆 —— 改三次图仓库就上 1 GB，而且**历史删不掉**。
@@ -125,6 +127,8 @@
 ---
 
 ## 装配 BOM
+
+> 下表与工作簿保留 **2026-09-16** 的零件清单；轮滑部分仍列独立轮辋和轮胎。飞特 v2.1 已改用 TPU 合体轮胎，做该变体时请按 v2.1 源文件核对，勿把旧清单视为完整 v2.1 BOM。
 
 [`BOM/装配BOM-机械行者Robo-2026-09-16-带采购链接.xlsx`](BOM/装配BOM-机械行者Robo-2026-09-16-带采购链接.xlsx) 是机械行者Robo 按装配体整理的，2026-09-16 版给轴承和螺丝加了他实际下单的淘宝 / 天猫链接（小白照着买就行）。
 表里电子件的型号和数量 2026-09-17 由 fanhao375 按主仓查证过的事实校过一遍（电池 NP-F550、舵机 15、`imu_to_dxl` 1、舵机线 17），下面这张表照它排。只有一处跟表不同：
@@ -198,14 +202,16 @@
 
 ## 打印
 
-**[`打印/microduck-飞特版-BambuStudio.3mf`](打印/microduck-飞特版-BambuStudio.3mf)** —— 机械行者Robo 排好盘的 Bambu Studio 工程，跟[拓竹 MakerWorld](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428) 上传的是同一份。
+**[`打印/microduck-飞特版-BambuStudio.3mf`](打印/microduck-飞特版-BambuStudio.3mf)** —— 机械行者Robo 排好盘的 Bambu Studio 工程，版本为 **2026-09-15**。
+
+**这不是完整 v2.1 打印包。** 已核对工程内仍有独立轮辋 4 个、轮胎 4 个，没有 v2.1 合体轮胎；若制作新版轮滑变体，请从 [v2.1 源文件](https://github.com/fanhao375/microduck-replica-cad/releases/tag/v2.1) 导出合体轮胎，按 TPU 切片，避免与旧轮辋/轮胎重复打印。[MakerWorld 在线工程](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428)是否同步本轮未验证。此处只更新入口与版本说明，没有修改 3MF 或 CAD 模型。
 
 | 项 | 值 |
 |---|---|
 | 打印机 | Bambu Lab **P2S**，0.4 喷嘴 |
 | 耗材 | PLA Basic |
 | 层高 | 0.2 mm |
-| 盘数 | **5 盘**，52 个对象 —— 飞特版全部打印件 |
+| 盘数 | **5 盘**，52 个对象 —— 09-15 工程中的对象，非 v2.1 完整清单 |
 
 <table>
 <tr>
@@ -217,7 +223,7 @@
 </tr>
 </table>
 
-**怎么用**：Bambu Studio 打开 → 切片 → 打印，五盘依次来。**不是拓竹打印机**也能用：任何切片软件都能导入 `.3mf` 拿到模型和排盘，只是打印参数要按自己的机器重设。
+**怎么用**：先核对舵机版本、所需零件与材料，再用 Bambu Studio 打开工程、检查排盘并切片。软下巴、软嘴顶部与轮胎等柔性件应按 BOM 使用 TPU，不能统一按默认 PLA 打印。使用其他打印机时，应确认切片软件支持导入该 3MF，并按自己的机器重设打印参数。
 
 耗材、螺丝、热熔螺母的采购在[主仓机械采购清单](https://github.com/fanhao375/microduck-replica/blob/master/docs/机械采购清单.md)。
 
