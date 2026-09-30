@@ -66,7 +66,7 @@
 | 要什么 | 在哪 |
 |---|---|
 | **飞特 HD-1910 版源文件**（v2.1 · 60 个 SolidWorks，解压约 358 MB） | 👉 [**下载 `SolidWorks-FT2026-09-25.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.1/SolidWorks-FT2026-09-25.zip) |
-| **只要改动件的 STEP**（v2.1 · 10 个，10 MB） | 👉 [**下载 `STEP-changed-parts-FT-2026-09-25.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.1/STEP-changed-parts-FT-2026-09-25.zip) —— 不用 SolidWorks 也能开 |
+| **只要改动件的 STEP**（v2.1 · 11 个） | 👉 [**下载 `STEP-changed-parts-FT-2026-09-30.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.1/STEP-changed-parts-FT-2026-09-30.zip) —— 新增面部零件 FT1（适配瑞莎原版摄像头），不用 SolidWorks 也能开 |
 | **原版 XL330 版源文件**（v1.1 · 57 个 SolidWorks，解压 348 MB） | 👉 [**下载 `SolidWorks-XL330-v1.1.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v1.1/SolidWorks-XL330-v1.1.zip)（[v1.0 旧版](../../releases/tag/v1.0) 仍可下） |
 | **装配 BOM**（机械行者Robo 整理，33 个打印件 + 21 个外购件，含材料、数量、单价，**2026-09-29 起所有外购件都带淘宝 / 天猫采购链接**） | [`BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx`](BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx)，下面有校对过的表 |
 | **装配安装说明书**（21 页 PDF） | [`安装说明书/microduck装配安装说明书.pdf`](安装说明书/microduck装配安装说明书.pdf) |
@@ -107,6 +107,13 @@
 
 - **`rim_轮辋` 和 `tire_轮胎` 合并为 `合体轮胎`**：两个独立件组装困难，删除后合成一个「合体轮胎」，材料 **TPU**。
 - 全套 SolidWorks 现在是 **60 个**（17 装配体 + 43 零件）；改动件 STEP 增到 **10 个**（新增 `合体轮胎.STEP`）。
+
+---
+
+## 面部零件适配瑞莎原版摄像头（2026-09-30）
+
+- **`face_part_面部零件` 新增 `-FT1` 变体**：把摄像头安装孔距改成能直接装**瑞莎（Radxa）原版摄像头**。
+- 改动件 STEP 包相应新增 **`face_part_面部零件-FT1适配瑞莎原版摄像头 改了孔距.STEP`**，由 10 个增到 **11 个**。
 
 ---
 
