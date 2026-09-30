@@ -68,7 +68,7 @@
 | **飞特 HD-1910 版源文件**（v2.1 · 60 个 SolidWorks，解压约 358 MB） | 👉 [**下载 `SolidWorks-FT2026-09-25.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.1/SolidWorks-FT2026-09-25.zip) |
 | **只要改动件的 STEP**（v2.1 · 10 个，10 MB） | 👉 [**下载 `STEP-changed-parts-FT-2026-09-25.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.1/STEP-changed-parts-FT-2026-09-25.zip) —— 不用 SolidWorks 也能开 |
 | **原版 XL330 版源文件**（v1.1 · 57 个 SolidWorks，解压 348 MB） | 👉 [**下载 `SolidWorks-XL330-v1.1.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v1.1/SolidWorks-XL330-v1.1.zip)（[v1.0 旧版](../../releases/tag/v1.0) 仍可下） |
-| **装配 BOM**（机械行者Robo 整理，35 个打印件 + 16 个外购件，含材料、数量，**2026-09-16 起带轴承和螺丝的采购链接**） | [`BOM/装配BOM-机械行者Robo-2026-09-16-带采购链接.xlsx`](BOM/装配BOM-机械行者Robo-2026-09-16-带采购链接.xlsx)，下面有校对过的表 |
+| **装配 BOM**（机械行者Robo 整理，33 个打印件 + 21 个外购件，含材料、数量、单价，**2026-09-29 起所有外购件都带淘宝 / 天猫采购链接**） | [`BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx`](BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx)，下面有校对过的表 |
 | **装配安装说明书**（21 页 PDF） | [`安装说明书/microduck装配安装说明书.pdf`](安装说明书/microduck装配安装说明书.pdf) |
 | **组件图 / 爆炸图**（23 张） | [`组件图/`](组件图/) |
 | 🖨️ **打印工程文件**（Bambu Studio `.3mf`，4.9 MB，2026-09-15 版） | [`打印/microduck-飞特版-BambuStudio.3mf`](打印/microduck-飞特版-BambuStudio.3mf) —— 5 个盘、52 个对象；**未含 v2.1 合体轮胎**，材料与切片参数见[打印说明](#打印) |
@@ -128,16 +128,16 @@
 
 ## 装配 BOM
 
-> 下表与工作簿保留 **2026-09-16** 的零件清单；轮滑部分仍列独立轮辋和轮胎。飞特 v2.1 已改用 TPU 合体轮胎，做该变体时请按 v2.1 源文件核对，勿把旧清单视为完整 v2.1 BOM。
+> 工作簿已更新到 **2026-09-29**：轮辋 + 轮胎合并为**合体轮胎**（打印件 33 项），外购件扩到 **21 项**，并且**所有外购件都加了淘宝 / 天猫采购链接**（2026-09-16 版只有轴承和螺丝有）。
 
-[`BOM/装配BOM-机械行者Robo-2026-09-16-带采购链接.xlsx`](BOM/装配BOM-机械行者Robo-2026-09-16-带采购链接.xlsx) 是机械行者Robo 按装配体整理的，2026-09-16 版给轴承和螺丝加了他实际下单的淘宝 / 天猫链接（小白照着买就行）。
-表里电子件的型号和数量 2026-09-17 由 fanhao375 按主仓查证过的事实校过一遍（电池 NP-F550、舵机 15、`imu_to_dxl` 1、舵机线 17），下面这张表照它排。只有一处跟表不同：
+[`BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx`](BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx) 是机械行者Robo 按装配体整理的。2026-09-29 版把外购件补齐成完整清单（主控 Radxa Zero 3W、TF 卡、飞特 URT2 调试板、电池座、ToF 等），并给每一项加上实际下单的淘宝 / 天猫链接（打板件指到主仓 github，拼团的直接标拼团）。电子件型号按主仓查证过的事实排（电池 NP-F550、舵机 15、`imu_to_dxl` 1），下面这张表照它排。有几处跟表不同：
 
 | 表里 | 这里 | 依据 |
 |---|---|---|
-| 轮辋 / 轮胎 / 滚轮叶片 | 标为**轮滑变体，走路不用** | 上游 `变体-轮滑/`，只有做轮滑功能才打 |
+| 合体轮胎 / 滚轮叶片 | 标为**轮滑变体，走路不用** | 上游 `变体-轮滑/`，只有做轮滑功能才打 |
+| 合体轮胎材料写 PLA | 实际应打 **TPU** | v2.1 合体轮胎是 TPU 软料，见[飞特 v2.1 改了什么](#飞特-v21-改了什么2026-09-25) |
 
-### 一、3D 打印件（35 项）
+### 一、3D 打印件（33 项）
 
 | # | 零件 | 文件 | 材料 | 数量 | 备注 |
 |---|---|---|---|---|---|
@@ -168,35 +168,55 @@
 | 25 | 脚踝右 | `ankle_right` | PLA | 1 | |
 | 26 | 脚踝左 V1 | `ankle_l_v1` | PLA | 1 | 备选，与 24 二选一 |
 | 27 | 脚踝右 V1 | `ankle_r_v1` | PLA | 1 | 备选，与 25 二选一 |
-| 28 | 轮辋 | `rim` | PLA | 4 | **轮滑变体，走路不用** |
-| 29 | 轮胎 | `tire` | TPU | 4 | **轮滑变体，走路不用** |
-| 30 | 滚轮叶片 | `roller_blade` | PLA | 2 | **轮滑变体，走路不用** |
-| 31 | M12 镜头座 | `m12_lens_holder` | PLA | 1 | |
-| 32 | 电机支架 | `motor_support` | PLA | 1 | |
-| 33 | 电源支架 | `power_support` | PLA | 1 | |
-| 34 | 香蕉形 PCB 锁扣 | `banana_pcb_locker` | PLA | 1 | |
-| 35 | 轴承滚轮 | `bearing_roll` | PLA | 2 | 可换铝合金增强 |
+| 28 | 合体轮胎 | `合体轮胎` | **TPU** | 4 | **轮滑变体，走路不用**；v2.1 把轮辋 + 轮胎合并 |
+| 29 | 滚轮叶片 | `roller_blade` | PLA | 2 | **轮滑变体，走路不用** |
+| 30 | 电机支架 | `motor_support` | PLA | 1 | |
+| 31 | 电源支架 | `power_support` | PLA | 1 | |
+| 32 | 香蕉形 PCB 锁扣 | `banana_pcb_locker` | PLA | 1 | |
+| 33 | 轴承滚轮 | `bearing_roll` | PLA | 2 | 可换铝合金增强 |
 
-### 二、外购件（16 项 + 螺纹胶）
+### 二、外购件（21 项）
 
-| # | 件 | 数量 | 备注 |
-|---|---|---|---|
-| 36 | Radxa Zero 3W 主控 | 1 | [主仓电控采购清单](https://github.com/fanhao375/microduck-replica/blob/master/docs/电控采购清单.md) |
-| 37 | RPI Robot HAT 电路板 | 1 | 官方开源，嘉立创打样；或[不打 HAT 飞线](https://github.com/fanhao375/microduck-replica/blob/master/docs/不打HAT.md) |
-| 38 | imu_to_dxl 电路板 | **1** | 主仓自绘，[hardware/imu_to_dxl](https://github.com/fanhao375/microduck-replica/tree/master/hardware/imu_to_dxl) |
-| 39 | 舵机 | **15** | XL330-M288 或飞特 **HD-1910-C001** 二选一；13 单盘 + 2 双盘 |
-| 40 | 舵机线缆 | 17 | 舵机自带一根，调试和总线分支要另买；飞特 2.0 mm、Dynamixel 2.5 mm |
-| 41 | 电池 | 1 | **NP-F550**，2S |
-| 42 | 电池座 | 1 | NP-F 电池仓 + 取电扣板 |
-| 43 | IMX219 摄像头 | 1 | |
-| 44 | 扬声器 | 1 | 走 HAT 音频才要 |
-| 45 | 轴承 10×15×3 | 3 | 机械行者Robo 买的：[淘宝 963037239628](https://item.taobao.com/item.htm?id=963037239628&skuId=6069280211062)（选 10×15×3 那个 SKU） |
-| 46 | 轴承 16×22×4 | 11 | 机械行者Robo 买的：[天猫 978199812185](https://detail.tmall.com/item.htm?id=978199812185&skuId=6245616343131) |
-| 47 | 轴承 6×12×3 | 2 | 轮滑变体用，走路不用买。同一家：[淘宝 963037239628](https://item.taobao.com/item.htm?id=963037239628&skuId=6068333830994)（选 6×12×3） |
-| 48 | 螺丝 M2×5 | 若干 | 机械行者Robo 买的：[天猫 637524754721](https://detail.tmall.com/item.htm?id=637524754721&skuId=5802482233046)；每种多少颗见[主仓紧固件反推](https://github.com/fanhao375/microduck-replica/blob/master/docs/紧固件反推.md) |
-| 49 | 螺丝 M2×6 | 若干 | 同一家：[天猫 637524754721](https://detail.tmall.com/item.htm?id=637524754721&skuId=5802482233047) |
-| 50 | 螺丝 M2.5×6 | 若干 | 同一家：[天猫 637524754721](https://detail.tmall.com/item.htm?id=637524754721&skuId=61808188996) |
-| 51 | 螺纹胶 | 1 | 乐泰 243，原表没列，装配说明书要求 |
+| # | 件 | 数量 | 单价(元) | 备注 / 采购链接 |
+|---|---|---|---|---|
+| 34 | Radxa Zero 3W 主控 | 1 | 309 | [淘宝 763812025816](https://item.taobao.com/item.htm?id=763812025816) |
+| 35 | 64GB TF 卡 | 1 | 60 | |
+| 36 | RPI Robot HAT 电路板 | 1 | — | 官方开源，嘉立创打样；或[不打 HAT 飞线](https://github.com/fanhao375/microduck-replica/blob/master/docs/不打HAT.md) |
+| 37 | imu_to_dxl 电路板 | 1 | — | 主仓自绘，[hardware/imu_to_dxl](https://github.com/fanhao375/microduck-replica/tree/master/hardware/imu_to_dxl) |
+| 38 | 飞特 HD1901M 舵机 | 15 | — | 可[拼团](https://github.com/fanhao375/microduck-replica)；主仓写 **HD-1910-C001** |
+| 39 | 飞特舵机 URT2 调试板 | 1 | 45 | [淘宝 575365901461](https://item.taobao.com/item.htm?id=575365901461&skuId=5435424470243) |
+| 40 | NP-F550 电池 | 1 | 17 | 2S；[天猫 658975825526](https://detail.tmall.com/item.htm?id=658975825526&skuId=4925738602652) |
+| 41 | 电池座 | 1 | 83 | [天猫 714898043960](https://detail.tmall.com/item.htm?id=714898043960&skuId=5173334659309) |
+| 42 | 2.5mm 香蕉插头 PCB 铜镀金 | 2 | 1.6 | [淘宝 1066300439603](https://item.taobao.com/item.htm?id=1066300439603&skuId=6116801109787) |
+| 43 | banana PCB | 1 | — | 嘉立创 |
+| 44 | IMX219 摄像头模块 | 1 | 46.8 | [天猫 775872575316](https://detail.tmall.com/item.htm?id=775872575316) |
+| 45 | VL53L8CX ToF 模块 | 1 | 49.5 | [淘宝 737603917521](https://item.taobao.com/item.htm?id=737603917521&skuId=5090650052053) |
+| 46 | 扬声器 | 1 | 3.8 | 走 HAT 音频才要；[淘宝 902489608878](https://item.taobao.com/item.htm?id=902489608878&skuId=5925223242747) |
+| 47 | 轴承 10×15×3 | 3 | 2.8 | [淘宝 670727787832](https://item.taobao.com/item.htm?id=670727787832) |
+| 48 | 轴承 16×22×4 | 11 | 3.5 | [淘宝 539024647147](https://item.taobao.com/item.htm?id=539024647147&skuId=5716548727712) |
+| 49 | 轴承 6×12×3 | 4 | 0.88 | 轮滑变体用，走路不用买；[淘宝 963037239628](https://item.taobao.com/item.htm?id=963037239628&skuId=6068333830994) |
+| 50 | 螺丝 M2×5 | 1 包 | 3.05 | [天猫 637524754721](https://detail.tmall.com/item.htm?id=637524754721&skuId=5802482233046) |
+| 51 | 螺丝 M2×6 | 1 包 | 4.05 | 同一家：[天猫 637524754721](https://detail.tmall.com/item.htm?id=637524754721&skuId=5802482233047) |
+| 52 | 螺丝 M2.5×6 | 1 包 | 3.93 | 同一家：[天猫 637524754721](https://detail.tmall.com/item.htm?id=637524754721&skuId=6180818899668) |
+| 53 | 螺丝 M2.5×8 | 1 包 | 2.08 | 同一家：[天猫 637524754721](https://detail.tmall.com/item.htm?id=637524754721&skuId=4572694449141) |
+| 54 | 乐泰螺纹胶 243 | 1 | 9 | [淘宝 1056442610986](https://item.taobao.com/item.htm?id=1056442610986&skuId=6099342537028) |
+
+> 每种螺丝多少颗见[主仓紧固件反推](https://github.com/fanhao375/microduck-replica/blob/master/docs/紧固件反推.md)。BOM 合计 **约 828 元**（不含 15 个舵机、HAT 板和 IMU 板；单价为机械行者Robo 下单时价）。
+
+---
+
+## 项目成本与开源倡议
+
+> 🦆 **人人都可以拥有属于自己的 MicroDuck！**
+
+**💰 项目成本**：除 15 个舵机、HAT 板和 IMU 板外，其余硬件成本约为 **828 元**。舵机、HAT 板和 IMU 板可以通过 [GitHub 项目](https://github.com/fanhao375/microduck-replica) 参与拼团，也可以根据需求在嘉立创、淘宝等平台自行购买。
+
+后续还会陆续开源安装教程、调试教程，帮助大家更方便地完成 MicroDuck 的组装与调试。
+
+**🤖 为什么要开源？** 希望让更多人能以更低的成本接触和学习具身智能、机器人控制与强化学习，动手实践、从零探索。如果这个项目对你有帮助，点个赞就是对我们最大的支持 ❤️，也欢迎点个 Star ⭐！
+
+> 🔗 GitHub：https://github.com/fanhao375/microduck-replica
+> 📕 小红书：机械行者 · 🎵 抖音：机械行者Robo · B站：机械行者Robo
 
 ---
 
