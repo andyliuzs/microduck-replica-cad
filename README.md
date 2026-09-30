@@ -26,7 +26,7 @@
 | | 原版 · XL330 · **v1.1** | 飞特 · HD-1910 · **v2.1** |
 |---|---|---|
 | **舵机** | Dynamixel XL330-M288 | 飞特 HD-1910-C001 |
-| **文件** | 57 个 SolidWorks，无后缀 | 60 个 SolidWorks + 10 个 STEP，`-FT` 后缀 |
+| **文件** | 57 个 SolidWorks，无后缀 | 60 个 SolidWorks + 11 个 STEP，`-FT` 后缀 |
 | **差别** | — | **舵盘凸出**，8 个配合件改了（[改了什么](#飞特-hd-1910-版改了什么)） |
 | **打印** | 从 [v1.1 SolidWorks 源文件](https://github.com/fanhao375/microduck-replica-cad/releases/tag/v1.1) 按零件导出 STL 后切片；本仓暂无该版整套打印工程 | [`打印/` 3MF](打印/) 为 09-15 版，未含 v2.1 合体轮胎；见[版本提示](#打印) |
 | **实物** | — | 已装出（上图） |
