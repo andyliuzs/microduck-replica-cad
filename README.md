@@ -194,8 +194,8 @@
 
 | # | 件 | 数量 | 单价(元) | 备注 / 采购链接 |
 |---|---|---|---|---|
-| 34 | Radxa Zero 3W 主控 | 1 | 309 | [淘宝 763812025816](https://item.taobao.com/item.htm?id=763812025816) |
-| 35 | 64GB TF 卡 | 1 | 60 | |
+| 34 | Radxa Zero 3W 主控 | 1 | 309 | **买 1G 或 2G 的无 eMMC 版**，系统装在 35 号 TF 卡上；只走官方渠道：[安联新创淘宝店](https://allnetchina.taobao.com)、瑞莎官方淘宝 / 京东店（2026-10-12 更正，理由和实测见[主仓电控采购清单](https://github.com/fanhao375/microduck-replica/blob/master/docs/电控采购清单.md#该买哪个配置)）。309 元是机械行者Robo 当时的下单价，[原链接](https://item.taobao.com/item.htm?id=763812025816)的配置和是否官方店未核实 |
+| 35 | 64GB TF 卡 | 1 | 60 | 无 eMMC 版主控的系统盘，**必须有**；32 GB 也够，买正规品牌 A1/A2 卡 |
 | 36 | RPI Robot HAT 电路板 | 1 | — | 官方开源，嘉立创打样；或[不打 HAT 飞线](https://github.com/fanhao375/microduck-replica/blob/master/docs/不打HAT.md) |
 | 37 | imu_to_dxl 电路板 | 1 | — | 主仓自绘，[hardware/imu_to_dxl](https://github.com/fanhao375/microduck-replica/tree/master/hardware/imu_to_dxl) |
 | 38 | 飞特 HD1901M 舵机 | 15 | — | 可[拼团](https://github.com/fanhao375/microduck-replica)；主仓写 **HD-1910-C001** |
