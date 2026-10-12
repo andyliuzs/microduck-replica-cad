@@ -9,6 +9,8 @@
 > 📦 **压缩包在 [Releases 页](../../releases)（页面右边栏），不在上面的文件列表里。** 374 MB 的 SolidWorks 不适合塞进 git。
 > 🖨️ 飞特打印工程见下方[打印说明](#打印)。仓库内 3MF 是 **2026-09-15 版，尚未包含 v2.1 的 TPU 合体轮胎**；该轮胎变更属于轮滑变体。[MakerWorld 工程](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428)由机械行者Robo 上传，本轮未核验其在线版本。
 
+> 📺 **装配视频教程：[B 站合集《MicroDuck 从零安装教程》](https://space.bilibili.com/312747174/lists/9279084?type=season)**，机械行者Robo 一集装一个部件，共 8 集，已更新 6 集 → [分集目录](#装配视频教程)
+
 <div align="center">
   <img src="assets/飞特版装机-正面.jpg" alt="飞特 HD-1910 版装机实物" width="360">
   <br><sub>2026-09-13 · 飞特 HD-1910 版装出来了，15 颗全在位</sub>
@@ -40,17 +42,22 @@
 
 **这套三维图纸和安装说明书，全部由「机械行者Robo」建模、整理、编写。**
 
-他还在做装配视频，有装配上的问题去他那儿留言最快：
+装配视频已经在 B 站更新（[分集目录](#装配视频教程)）。装配上有问题，去这几个账号下留言最快：
 
 <table>
 <tr>
-<td align="center" width="50%">
-  <img src="assets/小红书-机械行者Robo.jpg" alt="小红书 机械行者Robo" width="230"><br>
-  <b>小红书 · 机械行者Robo</b><br>
+<td align="center" width="33%">
+  <a href="https://space.bilibili.com/312747174"><img src="assets/B站-机械行者Robo.jpg" alt="B站 机械行者Robo" width="200"></a><br>
+  <b>B 站 · 机械行者Robo</b><br>
+  <sub>UID 312747174</sub>
+</td>
+<td align="center" width="33%">
+  <a href="https://www.xiaohongshu.com/user/profile/5ad950114eacab046016f038"><img src="assets/小红书-机械行者Robo.jpg" alt="小红书 机械行者" width="200"></a><br>
+  <b>小红书 · 机械行者</b><br>
   <sub>小红书号 270594280</sub>
 </td>
-<td align="center" width="50%">
-  <img src="assets/抖音-机械行者Robo.jpg" alt="抖音 机械行者Robo" width="230"><br>
+<td align="center" width="33%">
+  <a href="https://www.douyin.com/user/MS4wLjABAAAArLa_6yE3GE-AoRURoQnIHdbbI7yM-GHhzlgLZ-XbeYE"><img src="assets/抖音-机械行者Robo.jpg" alt="抖音 机械行者Robo" width="200"></a><br>
   <b>抖音 · 机械行者Robo</b><br>
   <sub>抖音号 1852366168 —— 「人人可做机器人」</sub>
 </td>
@@ -70,6 +77,7 @@
 | **原版 XL330 版源文件**（v1.1 · 57 个 SolidWorks，解压 348 MB） | 👉 [**下载 `SolidWorks-XL330-v1.1.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v1.1/SolidWorks-XL330-v1.1.zip)（[v1.0 旧版](../../releases/tag/v1.0) 仍可下） |
 | **装配 BOM**（机械行者Robo 整理，33 个打印件 + 21 个外购件，含材料、数量、单价，**2026-09-29 起所有外购件都带淘宝 / 天猫采购链接**） | [`BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx`](BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx)，下面有校对过的表 |
 | **装配安装说明书**（21 页 PDF） | [`安装说明书/microduck装配安装说明书.pdf`](安装说明书/microduck装配安装说明书.pdf) |
+| 📺 **装配视频教程**（共 8 集，已更新 6 集） | [B 站合集《MicroDuck 从零安装教程》](https://space.bilibili.com/312747174/lists/9279084?type=season)，[分集目录](#装配视频教程)见下文 |
 | **组件图 / 爆炸图**（23 张） | [`组件图/`](组件图/) |
 | 🖨️ **打印工程文件**（Bambu Studio `.3mf`，4.9 MB，2026-09-15 版） | [`打印/microduck-飞特版-BambuStudio.3mf`](打印/microduck-飞特版-BambuStudio.3mf) —— 5 个盘、52 个对象；**未含 v2.1 合体轮胎**，材料与切片参数见[打印说明](#打印) |
 | 🖨️ **MakerWorld 打印入口** | [MakerWorld · microduck 飞特版](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428) —— 使用前核对作者标注的版本与材料，本轮未核验在线更新 |
@@ -218,12 +226,12 @@
 
 **💰 项目成本**：除 15 个舵机、HAT 板和 IMU 板外，其余硬件成本约为 **828 元**。舵机、HAT 板和 IMU 板可以通过 [GitHub 项目](https://github.com/fanhao375/microduck-replica) 参与拼团，也可以根据需求在嘉立创、淘宝等平台自行购买。
 
-后续还会陆续开源安装教程、调试教程，帮助大家更方便地完成 MicroDuck 的组装与调试。
+安装教程已经开始在 B 站更新（[装配视频教程](#装配视频教程)），后续还会陆续开源调试教程，帮助大家更方便地完成 MicroDuck 的组装与调试。
 
 **🤖 为什么要开源？** 希望让更多人能以更低的成本接触和学习具身智能、机器人控制与强化学习，动手实践、从零探索。如果这个项目对你有帮助，点个赞就是对我们最大的支持 ❤️，也欢迎点个 Star ⭐！
 
 > 🔗 GitHub：https://github.com/fanhao375/microduck-replica
-> 📕 小红书：机械行者 · 🎵 抖音：机械行者Robo · B站：机械行者Robo
+> 📕 小红书：[机械行者](https://www.xiaohongshu.com/user/profile/5ad950114eacab046016f038) · 🎵 抖音：[机械行者Robo](https://www.douyin.com/user/MS4wLjABAAAArLa_6yE3GE-AoRURoQnIHdbbI7yM-GHhzlgLZ-XbeYE) · B站：[机械行者Robo](https://space.bilibili.com/312747174)
 
 ---
 
@@ -288,6 +296,19 @@
 ```
 
 **每一步的详细步骤、配图和注意事项，见** [装配安装说明书 PDF](安装说明书/microduck装配安装说明书.pdf)。
+
+## 装配视频教程
+
+**[B 站合集《MicroDuck 从零安装教程》](https://space.bilibili.com/312747174/lists/9279084?type=season)** —— 机械行者Robo 录的，从零件清单讲起，一集装一个部件。视频是先把腿、躯干、颈、头各自装成组件，跟上面按编号的整机顺序不完全一样，两边对照着看。共 8 集，截至 2026-10-12 已更新 6 集：
+
+| 集 | 内容 | 时长 |
+|---|---|---|
+| [第 1 集](https://www.bilibili.com/video/BV1RoHX68EFV/) | 零件清单：头部、颈部、左右腿、脚掌各组件和舵机配件 | 1:32 |
+| [第 2 集](https://www.bilibili.com/video/BV1Xppb6tECr/) | 小腿安装 | 2:21 |
+| [第 3 集](https://www.bilibili.com/video/BV1ycpb6yEwB/) | 大腿安装 | 5:13 |
+| [第 4 集](https://www.bilibili.com/video/BV1Kwpg6wE9G/) | 躯干组件安装 | 2:29 |
+| [第 5 集](https://www.bilibili.com/video/BV1EEpg6nEkD/) | 颈部安装 | 0:40 |
+| [第 6 集](https://www.bilibili.com/video/BV1aKpE6hEzj/) | 头部安装 | 5:50 |
 
 ---
 
