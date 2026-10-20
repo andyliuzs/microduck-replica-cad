@@ -1,12 +1,12 @@
 # Microduck 复刻 · SolidWorks 三维图纸与装配说明书
 
 > **可编辑的 SolidWorks 源文件**（不是 STL），外加一份 21 页的装配安装说明书。**两个版本**：
-> **v2.1 飞特 HD-1910 版**（2026-09-25，轮辋 + 轮胎合并）和 **v1.1 原版 XL330 版**（2026-09-15，踝 / 小腿 / 脚同步改了）。
+> **v2.2 飞特 HD-1910 版**（2026-10-20，散热孔 + 上腿间隙）和 **v1.1 原版 XL330 版**（2026-09-15，踝 / 小腿 / 脚同步改了）。
 > 配套主仓：[**fanhao375/microduck-replica**](https://github.com/fanhao375/microduck-replica) —— 整机复刻、电路板与逆向分析都在那边。
 
 > **模型与打印文件统一在本仓库维护（2026-09-28）。** 主仓已移除旧上游 STL 下载副本。请先选择飞特或 XL330 版本，再核对具体附件；两款舵机的配合件不能混用。
 
-> 📦 **压缩包在 [Releases 页](../../releases)（页面右边栏），不在上面的文件列表里。** 374 MB 的 SolidWorks 不适合塞进 git。
+> 📦 **压缩包在 [Releases 页](../../releases)（页面右边栏），不在上面的文件列表里。** 418 MB 的 SolidWorks 不适合塞进 git。
 > 🖨️ 飞特打印工程见下方[打印说明](#打印)。仓库内 3MF 是 **2026-09-15 版，尚未包含 v2.1 的 TPU 合体轮胎**；该轮胎变更属于轮滑变体。[MakerWorld 工程](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428)由机械行者Robo 上传，本轮未核验其在线版本。
 
 > 📺 **装配视频教程：[B 站合集《MicroDuck 从零安装教程》](https://space.bilibili.com/312747174/lists/9279084?type=season)**，机械行者Robo 一集装一个部件，共 8 集，已更新 6 集 → [分集目录](#装配视频教程)
@@ -25,14 +25,14 @@
 
 ## 两个版本，选一个下
 
-| | 原版 · XL330 · **v1.1** | 飞特 · HD-1910 · **v2.1** |
+| | 原版 · XL330 · **v1.1** | 飞特 · HD-1910 · **v2.2** |
 |---|---|---|
 | **舵机** | Dynamixel XL330-M288 | 飞特 HD-1910-C001 |
-| **文件** | 57 个 SolidWorks，无后缀 | 60 个 SolidWorks + 11 个 STEP，`-FT` 后缀 |
+| **文件** | 57 个 SolidWorks，无后缀 | 77 个 SolidWorks + 13 个 STEP，`-FT` 后缀 |
 | **差别** | — | **舵盘凸出**，8 个配合件改了（[改了什么](#飞特-hd-1910-版改了什么)） |
 | **打印** | 从 [v1.1 SolidWorks 源文件](https://github.com/fanhao375/microduck-replica-cad/releases/tag/v1.1) 按零件导出 STL 后切片；本仓暂无该版整套打印工程 | [`打印/` 3MF](打印/) 为 09-15 版，未含 v2.1 合体轮胎；见[版本提示](#打印) |
 | **实物** | — | 已装出（上图） |
-| **下载** | [`SolidWorks-XL330-v1.1.zip`](https://github.com/fanhao375/microduck-replica-cad/releases/download/v1.1/SolidWorks-XL330-v1.1.zip) 333 MB | [`SolidWorks-FT2026-09-25.zip`](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.1/SolidWorks-FT2026-09-25.zip) 343 MB |
+| **下载** | [`SolidWorks-XL330-v1.1.zip`](https://github.com/fanhao375/microduck-replica-cad/releases/download/v1.1/SolidWorks-XL330-v1.1.zip) 333 MB | [`SolidWorks-FT2026-10-20.zip`](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.2/SolidWorks-FT2026-10-20.zip) 418 MB |
 
 两版的踝 / 小腿 / 脚在 2026-09-15 同步成了一套设计；装配说明书和组件图两版通用。
 
@@ -72,8 +72,8 @@
 
 | 要什么 | 在哪 |
 |---|---|
-| **飞特 HD-1910 版源文件**（v2.1 · 60 个 SolidWorks，解压约 358 MB） | 👉 [**下载 `SolidWorks-FT2026-09-25.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.1/SolidWorks-FT2026-09-25.zip) |
-| **只要改动件的 STEP**（v2.1 · 11 个） | 👉 [**下载 `STEP-changed-parts-FT-2026-09-30.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.1/STEP-changed-parts-FT-2026-09-30.zip) —— 新增面部零件 FT1（适配瑞莎原版摄像头），不用 SolidWorks 也能开 |
+| **飞特 HD-1910 版源文件**（v2.2 · 77 个 SolidWorks，解压约 484 MB） | 👉 [**下载 `SolidWorks-FT2026-10-20.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.2/SolidWorks-FT2026-10-20.zip) |
+| **只要改动件的 STEP**（v2.2 · 13 个） | 👉 [**下载 `STEP-changed-parts-FT-2026-10-20.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.2/STEP-changed-parts-FT-2026-10-20.zip) —— 新增头部上壳（散热孔）与左壳，不用 SolidWorks 也能开 |
 | **原版 XL330 版源文件**（v1.1 · 57 个 SolidWorks，解压 348 MB） | 👉 [**下载 `SolidWorks-XL330-v1.1.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v1.1/SolidWorks-XL330-v1.1.zip)（[v1.0 旧版](../../releases/tag/v1.0) 仍可下） |
 | **装配 BOM**（机械行者Robo 整理，33 个打印件 + 21 个外购件，含材料、数量、单价，**2026-09-29 起所有外购件都带淘宝 / 天猫采购链接**） | [`BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx`](BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx)，下面有校对过的表 |
 | **装配安装说明书**（21 页 PDF） | [`安装说明书/microduck装配安装说明书.pdf`](安装说明书/microduck装配安装说明书.pdf) |
@@ -108,6 +108,15 @@
 **多出来的**：`HD-1910-c001-dan / -shuang`（单盘 / 双盘舵机模型）、`舵机比较.SLDASM`（两款舵机并排对比）、`飞特电机资料1/`（飞特给的 STEP / DWG / 规格图）。
 
 ⚠️ 装配说明书 PDF 和组件图**还是 v1.0 的**，装配顺序和步骤不变，只是舵机换了。
+
+---
+
+## 飞特 v2.2 改了什么（2026-10-20）
+
+- **`top_head_shell_头部上壳` 加散热孔**。
+- **`left_upper_leg_左上腿` / `right_upper_leg_右上腿` 减小间隙**。
+- 改动件 STEP 由 11 个增到 **13 个**（新增 `top_head_shell_头部上壳-FT`、`left_shell_左壳-FT`）。
+- SolidWorks 包新增 PCB 模型（`3D_imu_to_dxl`、`3D_wire_hub`、`3D_POGP_PIN`），并内嵌了 10 个 STEP 导出。
 
 ---
 
