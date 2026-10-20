@@ -1,13 +1,13 @@
 # Microduck 复刻 · SolidWorks 三维图纸与装配说明书
 
 > **可编辑的 SolidWorks 源文件**（不是 STL），外加一份 21 页的装配安装说明书。**两个版本**：
-> **v2.2 飞特 HD-1910 版**（2026-10-20，散热孔 + 上腿间隙）和 **v1.1 原版 XL330 版**（2026-09-15，踝 / 小腿 / 脚同步改了）。
+> **v2.2 飞特 HD-1910 版**（2026-10-20，散热孔 + 上腿间隙 + BOM 更新）和 **v1.1 原版 XL330 版**（2026-09-15，踝 / 小腿 / 脚同步改了）。
 > 配套主仓：[**fanhao375/microduck-replica**](https://github.com/fanhao375/microduck-replica) —— 整机复刻、电路板与逆向分析都在那边。
 
 > **模型与打印文件统一在本仓库维护（2026-09-28）。** 主仓已移除旧上游 STL 下载副本。请先选择飞特或 XL330 版本，再核对具体附件；两款舵机的配合件不能混用。
 
 > 📦 **压缩包在 [Releases 页](../../releases)（页面右边栏），不在上面的文件列表里。** 418 MB 的 SolidWorks 不适合塞进 git。
-> 🖨️ 飞特打印工程见下方[打印说明](#打印)。仓库内 3MF 是 **2026-09-15 版，尚未包含 v2.1 的 TPU 合体轮胎**；该轮胎变更属于轮滑变体。[MakerWorld 工程](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428)由机械行者Robo 上传，本轮未核验其在线版本。
+> 🖨️ 飞特打印工程见下方[打印说明](#打印)。仓库内 3MF 是 **2026-10-20 版（v2.2 散热孔 + 上腿间隙）**；轮滑变体轮胎见 v2.1 合体轮胎（TPU）。[MakerWorld 工程](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428)由机械行者Robo 上传，本轮未核验其在线版本。
 
 > 📺 **装配视频教程：[B 站合集《MicroDuck 从零安装教程》](https://space.bilibili.com/312747174/lists/9279084?type=season)**，机械行者Robo 一集装一个部件，共 8 集，已更新 6 集 → [分集目录](#装配视频教程)
 
@@ -30,9 +30,9 @@
 | **舵机** | Dynamixel XL330-M288 | 飞特 HD-1910-C001 |
 | **文件** | 57 个 SolidWorks，无后缀 | 77 个 SolidWorks + 13 个 STEP，`-FT` 后缀 |
 | **差别** | — | **舵盘凸出**，8 个配合件改了（[改了什么](#飞特-hd-1910-版改了什么)） |
-| **打印** | 从 [v1.1 SolidWorks 源文件](https://github.com/fanhao375/microduck-replica-cad/releases/tag/v1.1) 按零件导出 STL 后切片；本仓暂无该版整套打印工程 | [`打印/` 3MF](打印/) 为 09-15 版，未含 v2.1 合体轮胎；见[版本提示](#打印) |
+| **打印** | 从 [v1.1 SolidWorks 源文件](https://github.com/fanhao375/microduck-replica-cad/releases/tag/v1.1) 按零件导出 STL 后切片；本仓暂无该版整套打印工程 | [`打印/` 3MF](打印/) 为 **10-20 版**（v2.2 散热孔 + 上腿间隙）；见[版本提示](#打印) |
 | **实物** | — | 已装出（上图） |
-| **下载** | [`SolidWorks-XL330-v1.1.zip`](https://github.com/fanhao375/microduck-replica-cad/releases/download/v1.1/SolidWorks-XL330-v1.1.zip) 333 MB | [`SolidWorks-FT2026-10-20.zip`](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.2/SolidWorks-FT2026-10-20.zip) 418 MB |
+| **下载** | [`SolidWorks-XL330-v1.1.zip`](https://github.com/fanhao375/microduck-replica-cad/releases/download/v1.1/SolidWorks-XL330-v1.1.zip) 333 MB | [`SolidWorks-FT2026-10-20.zip`](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.2/SolidWorks-FT2026-10-20.zip) 418 MB（v2.2 · 散热孔 + 上腿间隙） |
 
 两版的踝 / 小腿 / 脚在 2026-09-15 同步成了一套设计；装配说明书和组件图两版通用。
 
@@ -72,14 +72,14 @@
 
 | 要什么 | 在哪 |
 |---|---|
-| **飞特 HD-1910 版源文件**（v2.2 · 77 个 SolidWorks，解压约 484 MB） | 👉 [**下载 `SolidWorks-FT2026-10-20.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.2/SolidWorks-FT2026-10-20.zip) |
+| **飞特 HD-1910 版源文件**（v2.2 · 77 个 SolidWorks，解压约 484 MB） | 👉 [**下载 `SolidWorks-FT2026-10-20.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.2/SolidWorks-FT2026-10-20.zip)（v2.2 · 散热孔 + 上腿间隙） |
 | **只要改动件的 STEP**（v2.2 · 13 个） | 👉 [**下载 `STEP-changed-parts-FT-2026-10-20.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v2.2/STEP-changed-parts-FT-2026-10-20.zip) —— 新增头部上壳（散热孔）与左壳，不用 SolidWorks 也能开 |
 | **原版 XL330 版源文件**（v1.1 · 57 个 SolidWorks，解压 348 MB） | 👉 [**下载 `SolidWorks-XL330-v1.1.zip`**](https://github.com/fanhao375/microduck-replica-cad/releases/download/v1.1/SolidWorks-XL330-v1.1.zip)（[v1.0 旧版](../../releases/tag/v1.0) 仍可下） |
-| **装配 BOM**（机械行者Robo 整理，33 个打印件 + 21 个外购件，含材料、数量、单价，**2026-09-29 起所有外购件都带淘宝 / 天猫采购链接**） | [`BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx`](BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx)，下面有校对过的表 |
+| **装配 BOM**（机械行者Robo 整理，33 个打印件 + 21 个外购件，含材料、数量、单价，**2026-10-20 起增加防滑垫、调试线，完善螺丝采购链接**） | [`BOM/装配BOM-机械行者Robo-2026-10-20-带采购链接.xlsx`](BOM/装配BOM-机械行者Robo-2026-10-20-带采购链接.xlsx)，下面有校对过的表 |
 | **装配安装说明书**（21 页 PDF） | [`安装说明书/microduck装配安装说明书.pdf`](安装说明书/microduck装配安装说明书.pdf) |
 | 📺 **装配视频教程**（共 8 集，已更新 6 集） | [B 站合集《MicroDuck 从零安装教程》](https://space.bilibili.com/312747174/lists/9279084?type=season)，[分集目录](#装配视频教程)见下文 |
 | **组件图 / 爆炸图**（23 张） | [`组件图/`](组件图/) |
-| 🖨️ **打印工程文件**（Bambu Studio `.3mf`，4.9 MB，2026-09-15 版） | [`打印/microduck-飞特版-BambuStudio.3mf`](打印/microduck-飞特版-BambuStudio.3mf) —— 5 个盘、52 个对象；**未含 v2.1 合体轮胎**，材料与切片参数见[打印说明](#打印) |
+| 🖨️ **打印工程文件**（Bambu Studio `.3mf`，4.9 MB，**2026-10-20 版**） | [`打印/microduck-飞特版-BambuStudio2026-10-20.3mf`](打印/microduck-飞特版-BambuStudio2026-10-20.3mf) —— 5 个盘、52 个对象；**v2.2 散热孔 + 上腿间隙**，材料与切片参数见[打印说明](#打印) |
 | 🖨️ **MakerWorld 打印入口** | [MakerWorld · microduck 飞特版](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428) —— 使用前核对作者标注的版本与材料，本轮未核验在线更新 |
 
 > **为什么源文件放 Releases 不放 git**：SolidWorks 是二进制格式，git 存它既不能 diff 也不能合并，
@@ -152,9 +152,9 @@
 
 ## 装配 BOM
 
-> 工作簿已更新到 **2026-09-29**：轮辋 + 轮胎合并为**合体轮胎**（打印件 33 项），外购件扩到 **21 项**，并且**所有外购件都加了淘宝 / 天猫采购链接**（2026-09-16 版只有轴承和螺丝有）。
+> 工作簿已更新到 **2026-10-20**：轮辋 + 轮胎合并为**合体轮胎**（打印件 33 项），外购件扩到 **21 项**，并且**所有外购件都加了淘宝 / 天猫采购链接**；**新增防滑垫、调试线，完善螺丝采购链接**。
 
-[`BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx`](BOM/装配BOM-机械行者Robo-2026-09-29-带采购链接.xlsx) 是机械行者Robo 按装配体整理的。2026-09-29 版把外购件补齐成完整清单（主控 Radxa Zero 3W、TF 卡、飞特 URT2 调试板、电池座、ToF 等），并给每一项加上实际下单的淘宝 / 天猫链接（打板件指到主仓 github，拼团的直接标拼团）。电子件型号按主仓查证过的事实排（电池 NP-F550、舵机 15、`imu_to_dxl` 1），下面这张表照它排。有几处跟表不同：
+[`BOM/装配BOM-机械行者Robo-2026-10-20-带采购链接.xlsx`](BOM/装配BOM-机械行者Robo-2026-10-20-带采购链接.xlsx) 是机械行者Robo 按装配体整理的。2026-10-20 版在 09-29 版基础上增加防滑垫、调试线，并完善螺丝采购链接。电子件型号按主仓查证过的事实排（电池 NP-F550、舵机 15、`imu_to_dxl` 1），下面这张表照它排。有几处跟表不同：
 
 | 表里 | 这里 | 依据 |
 |---|---|---|
@@ -246,16 +246,16 @@
 
 ## 打印
 
-**[`打印/microduck-飞特版-BambuStudio.3mf`](打印/microduck-飞特版-BambuStudio.3mf)** —— 机械行者Robo 排好盘的 Bambu Studio 工程，版本为 **2026-09-15**。
+**[`打印/microduck-飞特版-BambuStudio2026-10-20.3mf`](打印/microduck-飞特版-BambuStudio2026-10-20.3mf)** —— 机械行者Robo 排好盘的 Bambu Studio 工程，版本为 **2026-10-20**（v2.2）。
 
-**这不是完整 v2.1 打印包。** 已核对工程内仍有独立轮辋 4 个、轮胎 4 个，没有 v2.1 合体轮胎；若制作新版轮滑变体，请从 [v2.1 源文件](https://github.com/fanhao375/microduck-replica-cad/releases/tag/v2.1) 导出合体轮胎，按 TPU 切片，避免与旧轮辋/轮胎重复打印。[MakerWorld 在线工程](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428)是否同步本轮未验证。此处只更新入口与版本说明，没有修改 3MF 或 CAD 模型。
+**已包含 v2.2 所有更新。** 头部上壳含散热孔、左右上腿已优化装配间隙。工程内仍保留独立轮辋 4 个、轮胎 4 个（非 v2.1 合体轮胎）；若制作轮滑变体，请从 [v2.1 源文件](https://github.com/fanhao375/microduck-replica-cad/releases/tag/v2.1) 导出合体轮胎，按 TPU 切片。[MakerWorld 在线工程](https://makerworld.com.cn/zh/models/2963569-microduck#profileId-3478428)是否同步本版本未验证。
 
 | 项 | 值 |
 |---|---|
 | 打印机 | Bambu Lab **P2S**，0.4 喷嘴 |
 | 耗材 | PLA Basic |
 | 层高 | 0.2 mm |
-| 盘数 | **5 盘**，52 个对象 —— 09-15 工程中的对象，非 v2.1 完整清单 |
+| 盘数 | **5 盘**，52 个对象 —— 10-20 工程（v2.2 散热孔 + 上腿间隙） |
 
 <table>
 <tr>
